@@ -29,6 +29,7 @@ if ( ! isset( $content_width ) )
 | -------------------------------------------------------------------
 |
 | */
+
 add_action( 'after_setup_theme', 'bootstrapwp_theme_setup' );
 if ( ! function_exists( 'bootstrapwp_theme_setup' ) ):
 function bootstrapwp_theme_setup() {
@@ -49,6 +50,20 @@ function bootstrapwp_theme_setup() {
 }
 endif;
 
+/*------------------------------------------------------------------
+ * Global vars & custom classes
+-------------------------------------------------------------------*/
+require_once ( get_stylesheet_directory() . '/includes/global-variables.php' );
+require_once ( RP_INCLUDE_PATH . 'class-custom-post-type.php' );
+require_once ( RP_INCLUDE_PATH . 'class-custom-taxonomy.php' );
+require_once ( RP_INCLUDE_PATH . 'class-custom-metadata-form.php' );
+
+/*-------------------------------------------------------------------
+ * Custom Post Types
+-------------------------------------------------------------------*/
+require_once ( RP_CPT_PATH . 'cpt-staff-members.php' );
+require_once ( RP_CPT_PATH . 'cpt-staff-members-fields.php' );
+
 ################################################################################
 // Loading All CSS Stylesheets
 ################################################################################
@@ -67,6 +82,9 @@ add_action('wp_enqueue_scripts', 'bootstrapwp_css_loader');
        wp_enqueue_script('prettifyjs', get_template_directory_uri().'/js/google-code-prettify/prettify.js', array('jquery'),'1.0', true );
        wp_enqueue_script('googlemaps','https://maps.googleapis.com/maps/api/js?key=AIzaSyD8GIPzD4aXMqbGuQwlk5sddgjYhiF7Jos',null,null,true);
        wp_enqueue_style('bootstrapcss',  get_template_directory_uri().'/css/styles/bootstrapwp.css', array(), '2.0');
+       wp_enqueue_style('bootstrap-flex',  get_template_directory_uri().'/css/styles/bootstrap-flex.css', array(), '1.0');
+       wp_enqueue_style('bootstrap-utils',  get_template_directory_uri().'/css/styles/bootstrap-utilities.css', array(), '1.0');
+       wp_enqueue_style('c-staff-member',  get_template_directory_uri().'/css/styles/c-staff-member.css', array(), '1.0');
 
 
       // Make Placeholders work in IE 8 and 9

@@ -327,3 +327,11 @@ add_action('wp_enqueue_scripts', 'culture_page_enqueue_styles');
   {
       add_image_size('instagram-thumb', 350, 350, true);
   }
+
+  //debugging function
+  function rp_debug( $var ) {
+    echo '<blockquote><pre>';
+    $pre = print_r( $var, true );
+    echo esc_html( $pre );
+    echo '</pre></blockquote>';
+  }

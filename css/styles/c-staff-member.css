@@ -1,0 +1,133 @@
+.c-staff-members{
+
+}
+.c-staff-member {
+    margin: 0  auto !important;
+}
+
+.c-staff-member__wrapper {
+    width: 100%;
+    padding: 16px;
+    margin: 0  auto !important;
+}
+
+.c-staff-member img {
+    display: inline-block;
+    margin: 4px auto;
+    max-width: 100%;
+}
+
+.c-staff-members .our-team-members {
+    padding-left: 0 !important;
+}
+.c-staff-members .our-team-members div {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    font-size: 1rem !important;
+}
+
+.c-staff-member__toggle  {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 737px){
+    .c-staff-member__toggle  {
+        margin-left: inherit;
+    }
+}
+
+.c-staff-members .our-team-members-inner > div {
+    margin-left: 0 !important;
+}
+
+.c-staff-members .our-team-members  .member-name {
+    font-size: 21px !important;
+    line-height: 24px !important;
+    text-align: left !important;
+    margin-top: 7px;
+}
+
+.c-staff-members .position,
+.c-staff-members .sector {
+    font-size:  1rem!important;
+    line-height: 14px !important;
+    color: white;
+    margin-bottom: 14px;
+}
+
+.c-staff-members .linkedin-info {
+    display: inline !important;
+    text-align: left !important;
+}
+
+.c-staff-members .member-name,
+.c-staff-members .position,
+.c-staff-members .sector,
+.c-staff-members .info,
+.c-staff-members .linkedin,
+.c-staff-members .email {
+    text-align: left !important;
+    font-weight: 400 !important;
+}
+
+.c-staff-members .info{
+    font-size: 1rem;
+}
+
+.c-staff-member__online-contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+     -ms-flex-pack: center;
+     justify-content: center;
+}
+
+.c-staff-members__city-heading {
+    letter-spacing: initial;
+}
+
+#about-page-wrapper .about-content #our-team .c-staff-members .our-team-members div {
+    margin-bottom: 7px;
+}
+
+
+
+#about-page-wrapper .about-content #our-team .c-staff-members #edmonton-team:before {
+    left: 80px !important;
+}
+
+#about-page-wrapper .about-content #our-team .c-staff-members #calgary-team:before {
+    left: 250px !important;
+}
+
+@media (min-width: 737px){
+    #about-page-wrapper .about-content #our-team .c-staff-members #edmonton-team:before {
+        left: 210px !important;
+    }
+    
+    #about-page-wrapper .about-content #our-team .c-staff-members #calgary-team:before {
+        left: 460px !important;
+    }
+}
+
+@media (min-width: 992px){
+    #about-page-wrapper .about-content #our-team .c-staff-members #edmonton-team:before {
+        left: 110px !important;
+    }
+    
+    #about-page-wrapper .about-content #our-team .c-staff-members #calgary-team:before {
+        left: 290px !important;
+    }
+}
+
+@media (min-width: 1366px){
+    #about-page-wrapper .about-content #our-team .c-staff-members #edmonton-team:before {
+        left: 10.92592593% !important;
+    }
+    
+    #about-page-wrapper .about-content #our-team .c-staff-members #calgary-team:before {
+        left: 29.62962963% !important;
+    }
+}
