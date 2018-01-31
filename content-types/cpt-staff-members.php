@@ -41,7 +41,7 @@ $capabilities = array(
 $args = array(
   'description'   => 'Staff Member',
   'menu_position' => 8,
-  'supports'      => array('title', 'thumbnail', 'revisions'), //turns off the text-editor and the excerpts
+  'supports'      => array('title', 'thumbnail', 'revisions', 'custom-fields'), //turns off the text-editor and the excerpts
   'has_archive'   => false,
   'rewrite' => array( 'slug' => '/staff-members', 'with_front' => false ),
   'exclude_from_search' => false
