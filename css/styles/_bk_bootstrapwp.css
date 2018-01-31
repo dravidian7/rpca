@@ -10091,7 +10091,7 @@ footer .footer-bottom a {
     width: 182%;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 736px) {
   .masthead {
     margin-left: 0px !important;
     margin-right: 0px !important;
@@ -10124,7 +10124,7 @@ footer .footer-bottom a {
   }
   #home-wrapper .home-content .callout .col3 {
     background: none;
-    height: 210px;
+    /* height: 210px; */
   }
   #home-wrapper .home-content .callout .col3 .col-content {
     margin: 100px 60px 0;
