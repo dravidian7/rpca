@@ -1,0 +1,5 @@
+/** IE 8 Specific Styles **/
+
+ul.pager li a  {
+	width: 300px !important;
+}
