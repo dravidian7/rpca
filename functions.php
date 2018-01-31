@@ -29,7 +29,6 @@ if ( ! isset( $content_width ) )
 | -------------------------------------------------------------------
 |
 | */
-
 add_action( 'after_setup_theme', 'bootstrapwp_theme_setup' );
 if ( ! function_exists( 'bootstrapwp_theme_setup' ) ):
 function bootstrapwp_theme_setup() {

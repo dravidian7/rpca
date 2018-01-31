@@ -13,7 +13,8 @@ get_header(); ?>
 <div id="home-wrapper">
 
   <div class="jumbotron masthead">
-      <div class="container home-header-wrapper" style="background: url('<?php the_field('header_image'); ?>') no-repeat center;">
+  <?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID, 'thumbnail') ); ?>
+      <div class="container home-header-wrapper" style="background: url(<?php echo $url; ?>) no-repeat; background-size: cover;">
 
         <div class="row">
           <div class="caption-button-container span6 offset6">
