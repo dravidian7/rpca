@@ -57,7 +57,7 @@ $permissions = array('read');
 
 //uncomment to refresh perms and permalink rules
 
-add_action( 'init', function() {
+/* add_action( 'init', function() {
   flush_rewrite_rules();
   global $wp_post_types;
     if ( isset( $wp_post_types[ 'staff-member' ] ) ) {
@@ -65,7 +65,7 @@ add_action( 'init', function() {
         return true;
     }
     return false;
-}, 0 );
+}, 0 ); */
 
 
 $staff_member = new Custom_Post_Type('staff-member', $args, $roles, $capabilities, $permissions, $labels);
