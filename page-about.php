@@ -188,7 +188,7 @@ get_header(); ?>
 					<img src="<?php echo get_bloginfo('template_url'); ?>/img/recruitment-partners-assets/image_team.jpg" alt="Our Team" />
 				</div>
 				<!-- .col2 -->
-				<div class="c-staff-member__toggle col-12 col-md-6 team-toggle row justify-content-sm-center margin-vertical-xl">
+				<div class="c-staff-member__toggle col-12 col-md-6 justify-content-sm-center margin-vertical-xl row team-toggle u-flexExpandRight">
 					<div class="col-6 col-sm-4 col-md-5 text-center">
 						<button id="edmonton-btn" class="toggled">Edmonton</button>
 					</div>
