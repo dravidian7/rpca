@@ -1,0 +1,79 @@
+/** override component - main menu bootstrap navbar **/
+
+.c-main-menu.container {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/*
+mobile
+*/
+@media screen and (max-width:736px) {
+    /*
+    component root 
+    */
+    .c-main-menu {}
+
+    /*
+    override navbar-top
+    */
+    .c-main-menu.navbar.main-nav .navbar-top {
+        height: auto;
+        padding: 0;
+    }
+
+    .c-main-menu.navbar.main-nav .navbar-top ul {
+        height: auto;
+        padding: .25rem;
+    }
+
+    .c-main-menu.navbar.main-nav .navbar-top .c-main-menu__items {
+        padding: .5rem;
+    }
+
+    .c-main-menu.navbar.main-nav .navbar-top ul.locations {
+        text-align: center;
+        padding: .5rem;
+        background: #3f923f;
+    }
+    .c-main-menu.navbar.main-nav .navbar-top ul.locations li {
+        margin: auto;
+        line-height: 1rem;
+        display: list-item;
+    }
+
+    /*
+    all the nav's links
+    */
+    .c-main-menu.navbar.main-nav li {
+        line-height: .25rem;
+    }
+
+    .c-main-menu.navbar.main-nav .navbar-top ul li a, 
+    .c-main-menu.navbar.main-nav .navbar-top ul li span.navtop-divider {       
+        line-height: .875rem;
+    }
+
+    .c-main-menu.navbar.main-nav .navbar-top ul li span.navtop-divider {
+        display: none;
+    }
+
+    /*
+    normal links
+    */
+    .c-main-menu.navbar.main-nav .c-main-menu__link {
+        width: 25%;
+        text-align: center;
+    }
+
+    /*
+    social links
+    */
+    .c-main-menu.navbar.main-nav .c-main-menu__social-link {
+        display: block;
+        padding: .25rem 0;
+    }
+    .c-main-menu.navbar.main-nav li.social.linkedin a {
+        margin-right: .5rem;
+    }
+}
