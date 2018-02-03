@@ -5,6 +5,14 @@
     margin: 0  auto !important;
 }
 
+@media (min-width: 992px){
+    .c-staff-member[class*='col-md'] {
+        width: 31%;
+        flex: 0 0 31%;
+        max-width: none;
+    }
+}
+
 .c-staff-member__wrapper {
     width: 100%;
     padding: 1rem;
@@ -18,12 +26,12 @@
 }
 
 .c-staff-members .our-team-members {
-    padding-left: 0 !important;
+    padding-left: 15px !important;
 }
 .c-staff-members .our-team-members div {
     margin-left: auto !important;
     margin-right: auto !important;
-    font-size: 1rem !important;
+    font-size: 1rem;
 }
 
 .c-staff-member__toggle  {
@@ -48,28 +56,35 @@
     margin-top: 7px;
 }
 
-.c-staff-members .position,
+/* .c-staff-members .position,
 .c-staff-members .sector {
     font-size:  1rem!important;
     line-height: 14px !important;
     color: white;
     margin-bottom: .875rem;
 }
-
+ */
 .c-staff-members .linkedin-info {
     display: inline !important;
     text-align: left !important;
 }
 
 .c-staff-members .member-name,
-.c-staff-members .position,
-.c-staff-members .sector,
 .c-staff-members .info,
 .c-staff-members .linkedin,
 .c-staff-members .email {
-    font-family: "pt-sans", Helvetica, Arial, sans-serif !important;
-    text-align: left !important;
+    font-family: "pt-sans", Helvetica, Arial, sans-serif !important;    
     font-weight: 400 !important;
+    text-align: left !important;
+}
+
+.c-staff-members .position,
+.c-staff-members .sector{
+    text-align: left !important;
+    font-size: 1.15rem !important;
+    font-weight: 100 !important;
+    line-height: 1.15rem !important;
+    margin-bottom: .875rem;
 }
 
 .c-staff-members .info{
