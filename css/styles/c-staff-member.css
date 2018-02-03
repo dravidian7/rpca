@@ -5,6 +5,13 @@
     margin: 0  auto !important;
 }
 
+@media (min-width: 992px){
+    .c-staff-member {
+        width: 30%;
+        flex: 0 0 30%;
+    }
+}
+
 .c-staff-member__wrapper {
     width: 100%;
     padding: 1rem;
