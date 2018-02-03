@@ -234,7 +234,7 @@ get_header(); ?>
 									<div class="">
 										<h2 class="c-staff-members__city-heading text-center margin-bottom-md">Our Edmonton Team</h2>
 										<div class="our-team-members-inner">
-											<div class="row">
+											<div class="justify-content-center row">
 												<?php while ( $yeg_query->have_posts() ) {
 													$yeg_query->the_post();
 													$custom = get_post_custom();
@@ -295,7 +295,7 @@ get_header(); ?>
 									<div class="">
 										<h2 class="c-staff-members__city-heading text-center margin-bottom-md">Our Calgary Team</h2>
 										<div class="our-team-members-inner">
-											<div class="row">
+											<div class="justify-content-center row">
 												<?php
 												while ( $yyc_query->have_posts() ) {
 												$yyc_query->the_post();
