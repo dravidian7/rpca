@@ -1,6 +1,14 @@
 <?php
-/**
- * Description: Creates a new taxonomy using register_taxonomy()
+/*
+Description: Class to create a customtaxonomy, and associated roles and permissions (uses register_taxonomy())
+@author Suniel Sambasivan
+Reference: https://code.tutsplus.com/articles/custom-post-type-helper-class--wp-25104
+Usage: 
+$my_post_type = new Custom_Taxonomy( 'my-taxonomy', $post_types, $args, $capabilities, $labels );
+$args, $roles, capabilities and $labels are arrays that will override or merge with the default values defined in the class
+To see argument options see:
+https://codex.wordpress.org/Function_Reference/register_post_type 
+https://codex.wordpress.org/Function_Reference/register_taxonomy
 */
 
 class Custom_Taxonomy {

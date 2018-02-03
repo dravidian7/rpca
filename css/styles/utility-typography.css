@@ -1,0 +1,10 @@
+
+/* some utils */
+.base-font {
+    font-family: "pt-sans", Helvetica, Arial, sans-serif !important;
+    font-size: 1rem !important;
+    line-height: 2rem !important;
+  }
+  .base-font-family {
+    font-family: "pt-sans", Helvetica, Arial, sans-serif !important;
+  }
