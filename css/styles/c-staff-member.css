@@ -7,13 +7,13 @@
 
 .c-staff-member__wrapper {
     width: 100%;
-    padding: 16px;
+    padding: 1rem;
     margin: 0  auto !important;
 }
 
 .c-staff-member img {
     display: inline-block;
-    margin: 4px auto;
+    margin: .25rem auto;
     max-width: 100%;
 }
 
@@ -42,8 +42,8 @@
 }
 
 .c-staff-members .our-team-members  .member-name {
-    font-size: 21px !important;
-    line-height: 24px !important;
+    font-size: 1.25rem !important;
+    line-height: 2rem !important;
     text-align: left !important;
     margin-top: 7px;
 }
@@ -53,7 +53,7 @@
     font-size:  1rem!important;
     line-height: 14px !important;
     color: white;
-    margin-bottom: 14px;
+    margin-bottom: .875rem;
 }
 
 .c-staff-members .linkedin-info {
@@ -67,6 +67,7 @@
 .c-staff-members .info,
 .c-staff-members .linkedin,
 .c-staff-members .email {
+    font-family: "pt-sans", Helvetica, Arial, sans-serif !important;
     text-align: left !important;
     font-weight: 400 !important;
 }
@@ -86,6 +87,8 @@
 
 .c-staff-members__city-heading {
     letter-spacing: initial;
+    font-family: "pt-sans", Helvetica, Arial, sans-serif !important;
+    font-size: 2rem;
 }
 
 #about-page-wrapper .about-content #our-team .c-staff-members .our-team-members div {

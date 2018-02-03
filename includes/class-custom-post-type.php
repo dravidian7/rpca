@@ -1,7 +1,7 @@
 <?
 /*
 Description: Class to create a content type, taxonomy, and associated roles and permissions
-@author Suniel Sambasivan <suniel.sambasivan@ama.ab.ca>
+@author Suniel Sambasivan
 Reference: https://code.tutsplus.com/articles/custom-post-type-helper-class--wp-25104
 Usage: 
 $my_post_type = new Custom_Post_Type( 'My Post Type', $args, $roles, $permissions, $labels );
