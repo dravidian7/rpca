@@ -246,7 +246,7 @@ get_header(); ?>
 														<?php if ( has_post_thumbnail() ) { ?>
 														<img class="" src="<?php echo the_post_thumbnail_url('full') ?>" alt="<?php the_title(); ?>" />
 														<?php } ?>
-														<div class="member-name base-font-family">
+														<div class="member-name base-font-family margin-bottom-sm">
 															<strong>
 																<?php the_title() ?>
 															</strong>
@@ -254,7 +254,7 @@ get_header(); ?>
 														<div class="position">
 															<?php echo  $custom['rp_cpt_member_position'][0] ?>
 														</div>
-														<div class="sector">
+														<div class="sector margin-bottom-md">
 															<?php echo  $custom['rp_cpt_member_sector'][0] ?>
 														</div>
 														<p class="info base-font-family">
@@ -308,7 +308,7 @@ get_header(); ?>
 														<?php if ( has_post_thumbnail() ) { ?>
 														<img class="" src="<?php echo the_post_thumbnail_url('full') ?>" alt="<?php the_title(); ?>" />
 														<?php } ?>
-														<div class="member-name base-font-family">
+														<div class="member-name base-font-family margin-bottom-sm">
 															<strong>
 																<?php the_title() ?>
 															</strong>
@@ -316,7 +316,7 @@ get_header(); ?>
 														<div class="position">
 															<?php echo  $custom['rp_cpt_member_position'][0] ?>
 														</div>
-														<div class="sector">
+														<div class="sector margin-bottom-md">
 															<?php echo  $custom['rp_cpt_member_sector'][0] ?>
 														</div>
 														<p class="info base-font-family">
