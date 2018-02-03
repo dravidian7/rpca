@@ -137,58 +137,67 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 <!-- END - Facebook Stuff -->
+<header>
+  <div class="container navbar main-nav navbar-relative-top c-main-menu">
+    <div class="navbar-top clearfix">
+      <ul class="locations">
+        <li>Edmonton 780.758.5888 | Calgary 403.457.5888</li>
+      </ul>
+      <ul class="c-main-menu__items justify-content-end row u-flex">
+        <li class="link c-main-menu__link">
+          <a onclick="ga('send', 'event', 'Positions', 'Click', 'Permanent Positions Header');" href="<?php echo get_bloginfo('siteurl'); ?>/permanent-positions">Permanent Jobs</a><span class="navtop-divider">|</span>
+        </li>
+        <li class="link c-main-menu__link">
+          <a onclick="ga('send', 'event', 'Positions', 'Click', 'Temp Positions Header');" href="<?php echo get_bloginfo('siteurl'); ?>/temp-positions">Temporary Jobs</a><span class="navtop-divider">|</span>
+        </li>
+        <li class="link c-main-menu__link">
+          <a onclick="ga('send', 'event', 'Login', 'Click', 'Login Header');" href="<?php echo get_bloginfo('siteurl'); ?>/login">Login</a><span class="navtop-divider">|</span>
+        </li>
+        <li class="link c-main-menu__link">
+          <a target="_blank" onclick="ga('send', 'event', 'Track Time', 'Click', 'Track Time Header');" href="https://rpinc.springahead.com">Track Time</a>
+        </li>
+        <li class="social facebook c-main-menu__social-link">
+          <a onclick="ga('send', 'event', 'Social Link', 'Click', 'Facebook Icon Header');" href="http://www.facebook.com/recruitmentpartnersinc">
+            <span></span>
+          </a>
+        </li>
+        <li class="social twitter c-main-menu__social-link">
+          <a onclick="ga('send', 'event', 'Social Link', 'Click', 'Twitter Icon Header');" href="http://twitter.com/rpijobs">
+            <span></span>
+          </a>
+        </li>
+        <li class="social linkedin c-main-menu__social-link">
+          <a onclick="ga('send', 'event', 'Social Link', 'Click', 'LinkedIn Icon Header');" href="http://www.linkedin.com/company/2362673">
+            <span></span>
+          </a>
+        </li>
+      </ul>
+    </div> <!-- .navbar-top -->
+    <div class="navbar-inner">
+      <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="brand" href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+          <img src="<?php echo get_bloginfo('template_url') . '/img/recruitment-partners-assets/main-logo.png'; ?>" alt="recruitment partners"/>
+          <?php bloginfo( 'name' ); ?>
+        </a> <!-- .brand -->
 
-    <div class="container navbar main-nav navbar-relative-top">
-      <div class="navbar-top clearfix">         <ul class="locations">           <li>Edmonton 780.758.5888 | Calgary 403.457.5888</li>        </ul>        <ul>
-
-          <li class="link">
-            <a onclick="ga('send', 'event', 'Positions', 'Click', 'Permanent Positions Header');" href="<?php echo get_bloginfo('siteurl'); ?>/permanent-positions">Permanent Jobs</a><span class="navtop-divider">|</span>
-          </li><li class="link">
-            <a onclick="ga('send', 'event', 'Positions', 'Click', 'Temp Positions Header');" href="<?php echo get_bloginfo('siteurl'); ?>/temp-positions">Temporary Jobs</a><span class="navtop-divider">|</span>
-          </li><li class="link">
-            <a onclick="ga('send', 'event', 'Login', 'Click', 'Login Header');" href="<?php echo get_bloginfo('siteurl'); ?>/login">Login</a><span class="navtop-divider">|</span>
-          </li><li class="link">
-            <a target="_blank" onclick="ga('send', 'event', 'Track Time', 'Click', 'Track Time Header');" href="https://rpinc.springahead.com">Track Time</a>
-          </li><li class="social facebook">
-            <a onclick="ga('send', 'event', 'Social Link', 'Click', 'Facebook Icon Header');" href="http://www.facebook.com/recruitmentpartnersinc">
-              <span></span>
-            </a>
-          </li><li class="social twitter">
-            <a onclick="ga('send', 'event', 'Social Link', 'Click', 'Twitter Icon Header');" href="http://twitter.com/rpijobs">
-              <span></span>
-            </a>
-          </li><li class="social linkedin">
-            <a onclick="ga('send', 'event', 'Social Link', 'Click', 'LinkedIn Icon Header');" href="http://www.linkedin.com/company/2362673">
-              <span></span>
-            </a>
-          </li>
-        </ul>
-      </div> <!-- .navbar-top -->
-      <div class="navbar-inner">
-        <div class="container">
-           <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="brand" href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-            <img src="<?php echo get_bloginfo('template_url') . '/img/recruitment-partners-assets/main-logo.png'; ?>" alt="recruitment partners"/>
-            <?php bloginfo( 'name' ); ?>
-          </a> <!-- .brand -->
-
-          <?php
-           /** Loading WordPress Custom Menu  **/
-           wp_nav_menu( array(
-              'menu'            => 'main-menu',
-              'container_class' => 'nav-collapse',
-              'menu_class'      => 'nav',
-              'fallback_cb'     => '',
-              'menu_id' => 'main-menu',
-              'walker' => new Bootstrapwp_Walker_Nav_Menu()
-          ) ); ?>
-        </div> <!-- .container -->
-      </div> <!-- .navbar-inner -->
-    </div> <!-- .navbar -->
+        <?php
+          /** Loading WordPress Custom Menu  **/
+          wp_nav_menu( array(
+            'menu'            => 'main-menu',
+            'container_class' => 'nav-collapse',
+            'menu_class'      => 'nav',
+            'fallback_cb'     => '',
+            'menu_id' => 'main-menu',
+            'walker' => new Bootstrapwp_Walker_Nav_Menu()
+        ) ); ?>
+      </div> <!-- .container -->
+    </div> <!-- .navbar-inner -->
+  </div> <!-- .navbar -->
 
   <?php if(is_page_template('page-career-center.php') || is_page_template('page-career-center-landing.php')): ?>
     <div class="container sub-menu-navbar">
@@ -232,7 +241,8 @@
   ga('create', 'UA-64298691-1', 'auto');
   ga('send', 'pageview');
 
-</script>
+  </script>
+</header>
 
     <!-- End Header -->
               <!-- Begin Template Content -->

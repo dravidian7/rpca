@@ -139,26 +139,29 @@
 }(document, 'script', 'facebook-jssdk'));</script>
 <!-- END - Facebook Stuff -->
 
-    <div class="container navbar main-nav navbar-relative-top">
+    <div class="container navbar main-nav navbar-relative-top c-main-menu">
       <div class="navbar-top clearfix">
-        <ul>
-          <li class="link">
+        <ul class="justify-content-end row u-flex">
+          <li class="link c-main-menu__link">
             <a onclick="ga('send', 'event', 'Positions', 'Click', 'Permanent Positions Header');" href="<?php echo get_bloginfo('siteurl'); ?>/permanent-positions">Permanent Jobs</a><span class="navtop-divider">|</span>
-          </li><li class="link">
+          </li><li class="link c-main-menu__link">
             <a onclick="ga('send', 'event', 'Positions', 'Click', 'Temp Positions Header');" href="<?php echo get_bloginfo('siteurl'); ?>/temp-positions">Temporary Jobs</a><span class="navtop-divider">|</span>
-          </li><li class="link">
+          </li><li class="link c-main-menu__link">
             <a onclick="ga('send', 'event', 'Login', 'Click', 'Login Header');" href="<?php echo get_bloginfo('siteurl'); ?>/login">Login</a><span class="navtop-divider">|</span>
-          </li><li class="link">
+          </li><li class="link c-main-menu__link">
             <a target="_blank" onclick="ga('send', 'event', 'Track Time', 'Click', 'Track Time Header');" href="https://rpinc.springahead.com">Track Time</a>
-          </li><li class="social facebook">
+          </li>
+          <li class="social facebook c-main-menu__social-link">
             <a onclick="ga('send', 'event', 'Social Link', 'Click', 'Facebook Icon Header');" href="http://www.facebook.com/recruitmentpartnersinc">
               <span></span>
             </a>
-          </li><li class="social twitter">
+          </li>
+          <li class="social twitter c-main-menu__social-link">
             <a onclick="ga('send', 'event', 'Social Link', 'Click', 'Twitter Icon Header');" href="http://twitter.com/rpijobs">
               <span></span>
             </a>
-          </li><li class="social linkedin">
+          </li>
+          <li class="social linkedin c-main-menu__social-link">
             <a onclick="ga('send', 'event', 'Social Link', 'Click', 'LinkedIn Icon Header');" href="http://www.linkedin.com/company/2362673">
               <span></span>
             </a>

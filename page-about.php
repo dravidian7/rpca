@@ -176,7 +176,7 @@ get_header(); ?>
 
 			<hr />
 
-			<div id="our-team" class="row justify-content-sm-center margin-vertical-lg">
+			<div id="our-team" class="row justify-content-sm-center margin-top-lg">
 				<div class="col-12 col-sm-6">
 					<h1>Our Team</h1>
 					<p>
