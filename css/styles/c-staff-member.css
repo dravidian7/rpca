@@ -1,8 +1,16 @@
+/**
+For the "About" page
+Without having to edit the original badly made css, overriding this page's styles involves using !important alot.
+**/
 .c-staff-members{
-
 }
-.c-staff-member {
-    margin: 0  auto !important;
+
+.c-staff-members .our-team-members div.c-staff-member {
+    /* margin: 0  auto !important; */
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
 }
 
 @media (min-width: 992px){
@@ -45,6 +53,12 @@
     }
 }
 
+.c-staff-members__row,
+.c-staff-members .our-team-members-inner > div.c-staff-members__row {
+    margin-left: -0.5rem !important;
+    margin-right: -0.5rem !important;
+}
+
 .c-staff-members .our-team-members-inner > div {
     margin-left: 0 !important;
 }
@@ -54,6 +68,7 @@
     line-height: 2rem !important;
     text-align: left !important;
     margin-top: 7px;
+    margin-bottom: .125rem !important;
 }
 
 /* .c-staff-members .position,
@@ -80,15 +95,19 @@
 
 .c-staff-members .position,
 .c-staff-members .sector{
+    font-family: "pt-sans", Helvetica, Arial, sans-serif !important;   
     text-align: left !important;
-    font-size: 1.15rem !important;
+    font-size: 1rem !important;
     font-weight: 100 !important;
-    line-height: 1.15rem !important;
+    line-height: 1rem !important;
     margin-bottom: .875rem;
 }
 
 .c-staff-members .info{
     font-size: 1rem;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: solid white 1px;
 }
 
 .c-staff-member__online-contact {
@@ -101,16 +120,20 @@
 }
 
 .c-staff-members__city-heading {
-    letter-spacing: initial;
-    font-family: "pt-sans", Helvetica, Arial, sans-serif !important;
-    font-size: 2rem;
+    letter-spacing: 1px;
+    font-family: "kaffeesatz","pt-sans", Helvetica, Arial, sans-serif !important;
+    font-size: 2.25rem;
+    font-weight: 700;
 }
 
 #about-page-wrapper .about-content #our-team .c-staff-members .our-team-members div {
     margin-bottom: 7px;
 }
 
-
+#about-page-wrapper .about-content #our-team .c-staff-members .our-team-members div.position,
+#about-page-wrapper .about-content #our-team .c-staff-members .our-team-members div.sector {
+    margin-bottom: .25rem;
+}
 
 #about-page-wrapper .about-content #our-team .c-staff-members #edmonton-team:before {
     left: 80px !important;

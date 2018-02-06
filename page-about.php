@@ -201,6 +201,7 @@ get_header(); ?>
 					'post_type'  => 'staff-member',
 					'orderby' => 'date',
 					'order'   => 'ASC',
+					'posts_per_page' => 100,
 					'meta_query' => array(
 						array(
 							'key'     => 'rp_cpt_city',
@@ -214,6 +215,7 @@ get_header(); ?>
 					'post_type'  => 'staff-member',
 					'orderby' => 'date',
 					'order'   => 'ASC',
+					'posts_per_page' => 100,
 					'meta_query' => array(
 						array(
 							'key'     => 'rp_cpt_city',
@@ -229,12 +231,11 @@ get_header(); ?>
 
 						<?php if ( $yeg_query->have_posts() ) { ?>
 						<div class="col-12">
-							<div class="c-staff-members row">
-								<div id="edmonton-team" class="our-team-members col-12">
-									<div class="">
+							<div class="c-staff-members">
+								<div id="edmonton-team" class="our-team-members">
 										<h2 class="c-staff-members__city-heading text-center margin-bottom-md">Our Edmonton Team</h2>
 										<div class="our-team-members-inner">
-											<div class="justify-content-center row">
+											<div class="c-staff-members__row justify-content-center row">
 												<?php while ( $yeg_query->have_posts() ) {
 													$yeg_query->the_post();
 													$custom = get_post_custom();
@@ -286,71 +287,69 @@ get_header(); ?>
 												<?php }; //while ?>
 											</div>
 										</div>
-									</div>
 								</div>
 							</div>
 
-							<div class="c-staff-members row">
-								<div id="calgary-team" class="our-team-members col-12">
-									<div class="">
-										<h2 class="c-staff-members__city-heading text-center margin-bottom-md">Our Calgary Team</h2>
-										<div class="our-team-members-inner">
-											<div class="justify-content-center row">
-												<?php
-												while ( $yyc_query->have_posts() ) {
-												$yyc_query->the_post();
-												$custom = get_post_custom();
-												//rp_debug($custom); 
-												?>
+							<div class="c-staff-members">
+								<div id="calgary-team" class="our-team-members">
+									<h2 class="c-staff-members__city-heading text-center margin-bottom-md">Our Calgary Team</h2>
+									<div class="our-team-members-inner">
+										<div class="c-staff-members__row justify-content-center row">
 
-												<div class="c-staff-member col-12 col-sm-6 col-md-3">
-													<div class="c-staff-member__wrapper">
-														<?php if ( has_post_thumbnail() ) { ?>
-														<img class="" src="<?php echo the_post_thumbnail_url('full') ?>" alt="<?php the_title(); ?>" />
-														<?php } ?>
-														<div class="member-name base-font-family margin-bottom-sm">
-															<strong>
-																<?php the_title() ?>
-															</strong>
-														</div>
-														<div class="position">
-															<?php echo  $custom['rp_cpt_member_position'][0] ?>
-														</div>
-														<div class="sector margin-bottom-md">
-															<?php echo  $custom['rp_cpt_member_sector'][0] ?>
-														</div>
-														<p class="info base-font-family">
-															<?php echo  $custom['rp_cpt_info'][0] ?>
-														</p>
-														<div class="c-staff-member__online-contact base-font-family">
-														
-														<?php 
-															if (!isset($custom['rp_cpt_member_linkedin'])) { 
-																echo '<div class="linkedin-info col-4 padding-left-none"><img  src="' . get_bloginfo('template_url') . '/img/recruitment-partners-assets/member-linkedin-gray.png"
-																alt="' . get_the_title() . ' LinkedIn Info" /></div>'; } 
-															else { 
-																echo '
-																<div class="linkedin-info col-4 padding-left-none">
-																	<a href="' . $custom['rp_cpt_member_linkedin'][0] . '" target="_blank">
-																		<span class="linkedin-info"><img  src="' . get_bloginfo('template_url') . '/img/recruitment-partners-assets/member-linkedin.png"
-																				alt="' . get_the_title() . ' LinkedIn Info" /></span>
-																	</a>
-																</div>'; 
-															} 
-														?>
-															<div class="email col-8 padding-left-none">
-																<a class="btn btn-small" onclick="ga('send', 'event', 'Contact', 'Click', '<?php echo  $custom['rp_cpt_member_email'][0]; ?>');" href="mailto:<?php echo  $custom['rp_cpt_member_email'][0]; ?>">Email</a>
-															</div>
+											<?php
+											while ( $yyc_query->have_posts() ) {
+											$yyc_query->the_post();
+											$custom = get_post_custom();
+											//rp_debug($custom); 
+											?>
+
+											<div class="c-staff-member col-12 col-sm-6 col-md-3">
+												<div class="c-staff-member__wrapper">
+													<?php if ( has_post_thumbnail() ) { ?>
+													<img class="" src="<?php echo the_post_thumbnail_url('full') ?>" alt="<?php the_title(); ?>" />
+													<?php } ?>
+													<div class="member-name base-font-family margin-bottom-sm">
+														<strong>
+															<?php the_title() ?>
+														</strong>
+													</div>
+													<div class="position">
+														<?php echo  $custom['rp_cpt_member_position'][0] ?>
+													</div>
+													<div class="sector margin-bottom-md">
+														<?php echo  $custom['rp_cpt_member_sector'][0] ?>
+													</div>
+													<p class="info base-font-family">
+														<?php echo  $custom['rp_cpt_info'][0] ?>
+													</p>
+													<div class="c-staff-member__online-contact base-font-family">
+													
+													<?php 
+														if (!isset($custom['rp_cpt_member_linkedin'])) { 
+															echo '<div class="linkedin-info col-4 padding-left-none"><img  src="' . get_bloginfo('template_url') . '/img/recruitment-partners-assets/member-linkedin-gray.png"
+															alt="' . get_the_title() . ' LinkedIn Info" /></div>'; } 
+														else { 
+															echo '
+															<div class="linkedin-info col-4 padding-left-none">
+																<a href="' . $custom['rp_cpt_member_linkedin'][0] . '" target="_blank">
+																	<span class="linkedin-info"><img  src="' . get_bloginfo('template_url') . '/img/recruitment-partners-assets/member-linkedin.png"
+																			alt="' . get_the_title() . ' LinkedIn Info" /></span>
+																</a>
+															</div>'; 
+														} 
+													?>
+														<div class="email col-8 padding-left-none">
+															<a class="btn btn-small" onclick="ga('send', 'event', 'Contact', 'Click', '<?php echo  $custom['rp_cpt_member_email'][0]; ?>');" href="mailto:<?php echo  $custom['rp_cpt_member_email'][0]; ?>">Email</a>
 														</div>
 													</div>
 												</div>
+											</div>
 
-												<?php 
+									<?php 
 									}; //while 
 									?>
 											</div>
 										</div>
-									</div>
 								</div>
 							</div>
 						</div>
